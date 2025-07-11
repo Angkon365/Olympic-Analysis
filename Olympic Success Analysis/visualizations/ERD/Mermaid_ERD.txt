@@ -1,0 +1,48 @@
+erDiagram
+    Athletes {
+        int AthleteID PK
+        varchar Name
+        char Sex
+        decimal Height
+        decimal Weight
+    }
+
+    Games {
+        int GameID PK
+        int Year
+        varchar Season
+        varchar City
+    }
+
+    Sports {
+        int SportID PK
+        varchar SportName
+    }
+
+    Events {
+        int EventID PK
+        varchar EventName
+        int SportID FK
+    }
+
+    Teams {
+        int TeamID PK
+        varchar TeamName
+        varchar NOC
+    }
+
+    Participations {
+        int ParticipationID PK
+        int AthleteID FK
+        int GameID FK
+        int EventID FK
+        int TeamID FK
+        int Age
+        varchar Medal
+    }
+
+    Athletes ||--o{ Participations : "has participated in"
+    Games ||--o{ Participations : "hosted"
+    Events ||--o{ Participations : "occurred in"
+    Teams ||--o{ Participations : "represented by"
+    Sports ||--o{ Events : "includes"
