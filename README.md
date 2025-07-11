@@ -2,7 +2,7 @@
 A comprehensive SQL-based analysis of historical Olympic data to identify key drivers of success and provide strategic recommendations.
 # Decoding Olympic Success: A SQL-Based Analysis
 
-[View the Interactive Dashboard Here](https://<Your-GitHub-Username>.github.io/Olympic-Success-Analysis/dashboard/Dashboard.html)
+[View the Interactive Dashboard Here](https://angkon365.github.io/Olympic-Analysis/)
 
 **Project Overview**
 
